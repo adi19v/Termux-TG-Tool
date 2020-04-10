@@ -34,4 +34,4 @@ $python3 adder.py member.csv
 ____________________
 ____________________
 
-I hope it will be helpful for you: https://telegram.dog/wrong_user_name
+Ok
