@@ -3,9 +3,9 @@ from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 import csv
  
-api_id = 123456
-api_hash = 'YOUR_API_HASH'
-phone = '+111111111111'
+api_id = 1325142
+api_hash = '8198892ce2bbc2028dafa490f77f6941'
+phone = '+16469487103'
 client = TelegramClient(phone, api_id, api_hash)
  
 client.connect()
@@ -67,4 +67,4 @@ with open("member.csv","w",encoding='UTF-8') as f:
             last_name= ""
         name= (first_name + ' ' + last_name).strip()
         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])      
-print('Gandu Members scrape ho gaye hai. By @Wrong_User_Name')
+print('Scrapping done by @Aditya19v')
