@@ -3,9 +3,9 @@ from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 import csv
  
-api_id = 1230443
-api_hash = 'b934265deb4f03b2ef0a6a0ce3837242'
-phone = '+12036326639'
+api_id = 1138116
+api_hash = 'e9b498bd088f369ff01d27cd5bd51da8'
+phone = '+12035713287'
 client = TelegramClient(phone, api_id, api_hash)
  
 client.connect()
@@ -41,14 +41,14 @@ for g in groups:
     print(str(i) + '- ' + g.title)
     i+=1
  
-g_index = input("Number Enter kar: ")
+g_index = input("Enter Number: ")
 target_group=groups[int(g_index)]
  
 print('Fetching Members...')
 all_participants = []
 all_participants = client.get_participants(target_group, aggressive=True)
  
-print('member.csv me save ho raha hai...')
+print('saving member.csv ')
 with open("member.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
     writer.writerow(['username','user id', 'access hash','name','group', 'group id'])
